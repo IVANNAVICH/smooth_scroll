@@ -1,0 +1,58 @@
+.service {
+    @include e(h2){
+        text-align: center;
+        font-size: 30px;
+        padding-top: 1rem;
+    }
+}
+
+.service {
+    @include e(p){
+        text-align: center;
+        margin: 1rem auto;
+    }
+}
+
+.service {
+    @include e(gridbox){
+        display: flex;
+        flex-wrap: wrap;
+        
+        // grid-template-columns: minmax(min-content(auto), max-content(auto));
+    }
+}
+
+.service {
+    @include e(grid){
+        background-color: rgba(255,255,255, 0.1);
+        border: 1px solid gray;
+        border-radius: 20px;
+        // flex-basis: 31%;
+        margin: 10px;
+    }
+}
+
+// .service {
+//     @include e(){
+        
+//     }
+// }
+
+.service {
+    @include e(h3){
+        text-align: center;
+        
+    }
+}
+
+.service {
+    @include e(grid-p){
+        padding: 0.5rem;
+    }
+}
+
+.service {
+    @include e(more){
+        text-align: center;       
+    }
+}
