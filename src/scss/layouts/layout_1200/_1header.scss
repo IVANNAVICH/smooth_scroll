@@ -1,0 +1,26 @@
+.mobile-menu {
+    display: none;
+}
+
+.desktop-menu {
+    display: flex;
+}
+
+.desktop-menu {
+    @include e(h4) {
+        margin: 0;
+        padding: 1rem 2rem;
+    }
+}
+
+.desktop-menu {
+    @include e(h4) {
+        @include m(special){
+            background: linear-gradient(to right, $skyblue, $purple);
+            border-radius: 10px;
+            // box-shadow: -2px 2px 2px $black;
+            margin-left: 2rem;
+            
+        }
+    }
+}
