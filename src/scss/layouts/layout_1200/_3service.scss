@@ -3,3 +3,10 @@
         width: 600px;
     }
 }
+
+.service {
+    @include e(h2){
+        margin-top: 125px;
+        font-size: 42px;
+    }
+}
