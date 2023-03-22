@@ -38,7 +38,7 @@ h1, h2, h3, h4 {
 
 .moving-blur {
   display: none;
-  height: 50%;
+  height: 70%;
   aspect-ratio: 1;
   background: linear-gradient(to right, aquamarine, rgb(204, 51, 196));
   position: absolute;
@@ -55,29 +55,43 @@ h1, h2, h3, h4 {
 .bg-blur {
   position: absolute;
   z-index: -30;
+  overflow: hidden;
+  opacity: 0.8;
+  filter: blur(60px);
+  border-radius: 50px;
 }
 
 .bg-blur-1 {
   width: 100px;
   height: 100px;
-  border-radius: 50px;
-  overflow: hidden;
   background-color: $pink;
-  opacity: 0.8;
   top: 120px;
-  left: 80px;
-  filter: blur(60px);
+  left: 10%;
 }
 
 .bg-blur-2 {
   width: 100px;
   height: 200px;
-  border-radius: 50px;
-  overflow: hidden;
   background-color: $blue;
   top: 100px;
   right: 10%;
-  filter: blur(60px);
+}
+
+.bg-blur-3 {
+  width: 150px;
+  height: 250px;
+  background-color: $blue;
+  bottom: 100px;
+  left: 15%;
+}
+
+.bg-blur-4 {
+  width: 200px;
+  height: 200px;
+  background-color: $pink;
+  bottom: 100px;
+  right: 15%;
+  opacity: 0.4;
 }
 
 //--------------animation----------------
