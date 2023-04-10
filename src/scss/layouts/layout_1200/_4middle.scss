@@ -1,0 +1,13 @@
+.middle {
+    @include e(h2){
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 55px;
+    }
+}
+
+.middle {
+    @include e(p){
+        text-align: start;
+    }
+}

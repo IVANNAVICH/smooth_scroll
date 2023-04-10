@@ -7,15 +7,19 @@ move.animate ({
     left: `${pageX}px`,
     top: `${pageY}px`
 }, {duration: 2000, fill: "forwards"})
-}
+};
 
-// const blob = document.getElementById("blob");
 
-// window.onpointermove = event => { 
-//   const { clientX, clientY } = event;
-  
-//   blob.animate({
-//     left: `${clientX}px`,
-//     top: `${clientY}px`
-//   }, { duration: 3000, fill: "forwards" });
-// }
+new Swiper('.swiper', {
+            spaceBetween: 12,
+            speed: 400,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            freeMode: true,
+        });
+    
+
+
+

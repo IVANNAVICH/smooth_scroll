@@ -16,15 +16,15 @@
 
 .service {
     @include e(gridbox){
-       
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        display: none;
+        position: relative;
     }
 }
 
 .service {
     @include e(grid){
-        margin: 15px;
+        padding-top: 1px;
+        padding-bottom: 1px;
         background: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
         box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
         border-radius: 34px;
@@ -72,17 +72,17 @@
 .service {
     @include e(h3){
         text-align: center;
-        font-size: 24px;
-        
+        font-size: 21px;
     }
 }
 
 .service {
     @include e(grid-p){
-        padding: 1rem;
+        padding: 0.5rem 2rem;
+        text-align: center;
         font-weight: 400;
         font-size: 16px;
-        line-height: 26px;
+        line-height: 24px;
     }
 }
 
@@ -90,12 +90,51 @@
     @include e(more){
         text-align: center;  
         margin-bottom: 2rem;
+        cursor: pointer;
     }
 }
+
+.service__more:active {
+    transform: scale(1.1);
+    color: pink;
+}
+       
+
 
 .svg-arrow {
     width: 14px;
     height: 13px;
     vertical-align: middle; 
     margin-left: 0.5rem;
+}
+
+//Arrows
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev::after
+ {
+    color: skyblue;
+    font-size: 40px;
+    
+}
+
+.swiper-button-next::after {
+    color: skyblue;
+    font-size: 40px;
+
+}
+
+.swiper-button-prev:active {
+    transform: scale(1.2);
+}
+
+.swiper-button-next:active {
+    transform: scale(1.2);
 }

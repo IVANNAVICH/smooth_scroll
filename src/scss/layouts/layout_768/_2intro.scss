@@ -1,0 +1,17 @@
+.intro {
+    grid-template-columns: 2;
+}
+
+.intro {
+    @include e(block1){
+        padding-top: 120px;
+    }
+}
+
+.intro {
+    @include e(block2){
+        grid-column: 2;
+        padding-top: 80px;
+
+    }
+}

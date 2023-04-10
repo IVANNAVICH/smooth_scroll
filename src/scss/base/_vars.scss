@@ -1,13 +1,13 @@
 //fonts
 $google-font: 'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto&display=swap';
-$prefix: prefix- !default;
+$prefix: proj- !default;
 $baseFontSize: 16px;
 $baseFontFamily: 'DM Sans', sans-serif;
 $secondFontFamily: 'Roboto', sans-serif;
 $mediumFontWeight: 500;
 $mobilePadding: (12px / $baseFontSize) * 1rem;
 $desktopPadding: 1rem;
-
+$lineHeight: 26px;
 // Paths
 
 $imagesPath: "../i/";
