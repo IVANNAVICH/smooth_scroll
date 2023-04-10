@@ -9,6 +9,7 @@ html {
 
 body {
   @include getCssVar(font-family);
+  @include getCssVar(line-height);
   font-size: $baseFontSize;
   background: $deepBlue;
   height: 100vh;
