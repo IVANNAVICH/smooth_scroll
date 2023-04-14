@@ -18,12 +18,18 @@
     <div class="bg-blur bg-blur-4"></div>
 
     </div>
+    <div id="videoplayer" class="video">
+      <iframe id="myiframe" width="70%" height="70%" src="https://www.youtube.com/embed/60yP8f5E-B4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowscriptaccess="always" allowfullscreen>
+      </iframe>  
+    </div>
 
     <div class="container">
-      <div class="head">
+      <nav class="head">
         <div class="logo-block">
+          <a href="#">
           <img src="i/logo.png" alt="logo" class="logo-block__img">
           <h3 class="logo-block__h3">Zone.</h3>
+          </a>
         </div>
         <div class="mobile-menu">
           <svg class="menu-svg">
@@ -31,14 +37,16 @@
           </svg>
         </div>
         <div class="desktop-menu">
-          <h4 class="desktop-menu__h4">Home</h4>
-          <h4 class="desktop-menu__h4">About Us</h4>
-          <h4 class="desktop-menu__h4">Service</h4>
-          <h4 class="desktop-menu__h4">Pricing</h4>
-          <h4 class="desktop-menu__h4">Blog</h4>
-          <h4 class="desktop-menu__h4 desktop-menu__h4_special">Contact Us</h4>
+          <ul class="desktop-menu__ul">
+            <li class="desktop-menu__li">Home</li>
+            <li class="desktop-menu__li">About Us</li>
+            <li class="desktop-menu__li">Service</li>
+            <li class="desktop-menu__li">Pricing</li>
+            <li class="desktop-menu__li">Blog</li>
+            <li class="desktop-menu__li_special">Contact Us</li>
+          </ul>
         </div>
-      </div>
+      </nav>
 
       <main class="main">
         <div class="intro">
@@ -49,11 +57,10 @@
             </p>
             <div class="intro__joinbox">
               <button type="button" class="intro__btn">Join Us</button>
-              <div class="intro__watch">
-                <button>
+              <div class="video-btn intro__watch">
                 <img src="i/watch.png" alt="watch">
-                </button>
-                <h3 class="intro__h3">Watch video</h3></div>
+                <h3 class="intro__h3">Watch video</h3>
+              </div>
             </div>
           </div>
           <div class="intro__block2">
@@ -419,20 +426,115 @@
 
         <div class="sub">
           <h2 class="sub__h2">Subscribe to get the Latest News</h2>
-          <p class="sub_p">We recommended you to subscribe to our newspaper,drop your email below to get daily update about us</p>
-          <form class="sub__form" action="" method="post">
-            <input class="sub__input" type="email" placeholder="Enter your email address" required>
-            <button class="sub__btn">Subscribe</button>
+          <p class="sub__p">We recommended you to subscribe to our newspaper,drop your email below to get daily update about us</p>
+          <for class="sub__form" action="" method="post">
+            <input class="sub__input" name="email" type="email" placeholder="Enter your email address" required>
+            <button class="sub__btn" type="submit">Subscribe</button>
           </form>
         </div>
     
       </main>
 
+      <footer class="foot">
+        <div class="contact">
+          <section class="contact__box contact__box__1">
+            <ul class="contact__ul">
+              <li class="contact__li">
+                <div class="logo-block">
+                  <img src="i/logo.png" alt="logo" class="logo-block__img">
+                  <h3 class="logo-block__h3">Zone.</h3>
+                </div>
+              </li>
+              <li class="contact__li">
+                <svg class="footer-svg">
+                <use xlink:href="i/svg/footer/mark.svg#mark-svg" />
+                </svg>Dhaka, Bangladesh</li>
+              <li class="contact__li">
+                <svg class="footer-svg">
+                <use xlink:href="i/svg/footer/call.svg#call-svg" />
+                </svg>0943833399
+              </li>
+              <li class="contact__li">
+                <svg class="footer-svg">
+                <use xlink:href="i/svg/footer/post.svg#post-svg" />
+                </svg>support@zone.com</li>
+              <li class="contact__li contact__soc-box">
+                <li class="contact__soc-media">
+                  <svg class="contact__fcbk soc-svg">
+                  <use xlink:href="i/svg/footer/fcbk.svg#fcbk-svg" />
+                  </svg>
+                </li>
+                <li class="contact__soc-media">
+                  <svg class="contact__twtr soc-svg">
+                    <use xlink:href="i/svg/footer/twtr.svg#twtr-svg" />
+                    </svg>
+                </li>
+                <li class="contact__soc-media">
+                  <svg class="contact__insta soc-svg">
+                    <use xlink:href="i/svg/footer/insta.svg#insta-svg" />
+                    </svg>
+                </li>
+                <li class="contact__soc-media">
+                  <svg class="contact__pntrst soc-svg">
+                    <use xlink:href="i/svg/footer/pntrst.svg#pntrst-svg" />
+                    </svg>
+                </li>
+              </li>
+            </ul>
+          </section>
+          <section class="contact__box contact__box__2">
+            <ul class="contact__ul">
+              <li class="contact__li">Service</li>
+              <li class="contact__li">Order Management</li>
+              <li class="contact__li">Social Assistant</li>
+              <li class="contact__li">Crypto Platform</li>
+              <li class="contact__li">Analyzer of the News</li>
+            </ul>
+          </section>
+          <section class="contact__box contact__box__3">
+            <ul class="contact__ul">
+              <li class="contact__li">Company</li>
+              <li class="contact__li">About Us</li>
+              <li class="contact__li">News</li>
+              <li class="contact__li">Our trusted partner</li>
+              <li class="contact__li">New users FAQ</li>
+            </ul>
+          </section>
+          <section class="contact__box contact__box__4">
+            <ul class="contact__ul">
+              <li class="contact__li">Supports</li>
+              <li class="contact__li">Help center</li>
+              <li class="contact__li">Feedback</li>
+              <li class="contact__li">Contrast us</li>
+              <li class="contact__li">Terms conditions</li>
+            </ul>
+          </section>
+          <section class="contact__box contact__box__5">
+            <ul class="contact__ul">
+              <li class="contact__li">Resourses</li>
+              <li class="contact__li">Download app</li>
+              <li class="contact__li">Blog</li>
+              <li class="contact__li">What's new</li>
+              <li class="contact__li">Sitemap</li>
+            </ul>
+          </section>
+        </div>
+        
+      </footer>
+
+    </div>
+
+    <div class="bottom">
+      <a class="bottom__links bottom__link1" href="#"><p class="bottom__p">© 2021 Zone. - All rights reserved.</p></a>
+      <a class="bottom__links" href="#"><p class="bottom__p">Privacy</p></a>
+      <a class="bottom__links" href="#"><p class="bottom__p">Security</p></a>
+      <a class="bottom__links" href="#"><p class="bottom__p">Terms</p></a>
     </div>
 
     <!--  JavaScript here -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/script.js"></script>
   <script src="js/app.js"></script>
   </body>

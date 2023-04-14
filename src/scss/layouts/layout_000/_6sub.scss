@@ -1,0 +1,53 @@
+.sub {
+    margin: 120px 0 100px;
+    background: linear-gradient(180deg, rgba(254, 254, 255, 0.0145) 0%, rgba(255, 255, 255, 0.02) 100%);
+    box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
+    border-radius: 34px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.sub__h2 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.sub__p {
+    font-family: $secondFontFamily;
+    line-height: 24px;
+}
+
+.sub__form {
+    background: linear-gradient(180deg, rgba(254, 254, 255, 0.0348) 0%, rgba(255, 255, 255, 0.048) 100%);
+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.07);
+    border-radius: 70px;
+    padding: 0.8rem;
+    display: flex;
+}
+
+.sub__input {
+    color: $white;
+    font-size: 12px;
+    flex-basis: 70%;
+}
+
+.sub__input:-webkit-autofill {
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    -webkit-text-fill-color: $pink;
+    -webkit-box-shadow: 0 0 0px 1000px linear-gradient(180deg, rgba(254, 254, 255, 0.0348) 0%, rgba(255, 255, 255, 0.048) 100%) inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.sub__btn {
+    color: $white;
+    background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
+    opacity: 0.9;
+    border-radius: 70px;
+    flex-basis: 30%;
+    padding: 1.2rem 0.7rem;
+    font-family: $secondFontFamily;
+    font-weight: 500;
+    font-size: 14px;
+    // line-height: 30px;
+}
