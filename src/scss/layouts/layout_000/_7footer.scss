@@ -1,0 +1,70 @@
+.footer-svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+}
+
+.contact__box {
+    margin: 8px;
+}
+
+.contact__ul{
+    margin: 0;
+    padding: 0;
+}
+
+.contact__li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact__soc-box {
+    display: flex;
+    
+}
+
+.contact__soc-media {
+   display: inline-block;
+   width: 34px;
+   height: 34px;
+   background: linear-gradient(180deg, rgba(254, 254, 255, 0.0145) 0%, rgba(255, 255, 255, 0.02) 100%);
+   border-radius: 50%;
+   
+   position: relative;
+}
+
+.soc-svg {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    transform: translate(50%, 50%);
+}
+
+li .logo-block {
+    padding: 0;
+}
+
+.bottom {
+    border-top: 2px solid rgba(150, 150, 150, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.bottom__link1 {
+    flex-basis: 42%;
+}
+

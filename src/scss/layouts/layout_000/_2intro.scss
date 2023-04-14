@@ -35,7 +35,7 @@
         margin: 2rem 0;
         text-align: center;
         color: #E5E7EB;
-        opacity: 0.9;
+        // opacity: 0.9;
         font-weight: 500;
         font-size: 15px;
         line-height: 20px;
@@ -67,14 +67,20 @@
         margin: auto 0;
         font-size: 14px;
         padding-left: 10px;
+        transition: all 0.05s;
+        border-bottom: 2px solid transparent;
     }
+}
+
+.intro__watch:active {
+    transform: scale(1.1);
 }
 
 .intro {
     @include e(h3){
         display: inline;
         padding-left: 8px;
-        vertical-align: middle;
+        vertical-align: 8px;
     }
 }
 
