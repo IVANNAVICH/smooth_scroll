@@ -6,13 +6,44 @@
     }
 }
 
+.service__h2 span {
+    display: inline-block;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i));
+}
+
+@keyframes flip {
+    0%,80% {
+        transform: rotateY(360deg);
+    }
+}
+
 .service {
     @include e(p){
         text-align: center;
         margin: 1rem auto 30px;
         line-height: 26px;
+        animation: 2s lineUp ease-out;
     }
 }
+
+  @keyframes lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 
 .service {
     @include e(gridbox){
@@ -91,16 +122,16 @@
         text-align: center;  
         margin-bottom: 2rem;
         cursor: pointer;
+        transition: transform 0.1s;
     }
 }
 
 .service__more:active {
     transform: scale(1.1);
     color: pink;
+    background: none;
 }
        
-
-
 .svg-arrow {
     width: 14px;
     height: 13px;
@@ -121,14 +152,12 @@
 .swiper-button-prev::after
  {
     color: skyblue;
-    font-size: 40px;
-    
+    font-size: 40px; 
 }
 
 .swiper-button-next::after {
     color: skyblue;
     font-size: 40px;
-
 }
 
 .swiper-button-prev:active {

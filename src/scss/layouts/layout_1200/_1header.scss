@@ -53,20 +53,49 @@
             padding: 1rem 2rem;
             list-style: none;
             cursor: pointer;
-            background: linear-gradient(to right, $skyblue, $purple);
             border-radius: 10px;
+            border: 1px solid #D946EF;
             margin-left: 2rem;
+            transition: .3s opacity linear;
+            position: relative;
+            overflow: hidden;
         }
     }
 }
 
-.desktop-menu {
-    @include e(li) {
-        @include m(special){
-            @include h {
-                color:rgb(250, 99, 124);
-                transform: scale(1.05);
-            }    
-        }
-    }
+.desktop-menu__li_special:hover {
+    color: #D946EF;
+}
+
+.special {
+    position: relative;
+    display: block;
+}
+
+.desktop-menu__li_special:hover .special-static {
+    opacity: 0;    
+    transform: translateY(-1%);
+    transition: transform 0.5s;
+    transition: .3s opacity linear;
+}
+
+.desktop-menu__li_special:hover .special-hover {
+    opacity: 1;
+    transform: translateY(0);
+    scale: 1.2; 
+  }
+
+.special-static {
+    display: block;
+    scale: 1.2;
+}
+
+.special-hover {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(70%);
+    transition: all 0.5s;
 }

@@ -1,0 +1,17 @@
+.contact__li {
+    @include h {
+        color: rgb(223, 135, 235);
+    }
+}
+
+.contact__soc-media {
+    @include h {
+        transform: scale(1.3);
+    }
+}
+
+.bottom__links {
+    @include h {
+        color: rgb(223, 135, 235);
+    }
+}

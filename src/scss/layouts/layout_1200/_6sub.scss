@@ -1,0 +1,24 @@
+.sub__btn {
+@include h {
+    cursor: pointer;
+    color: #D946EF;
+    transition: all 0.2s;
+}
+}
+
+.sub__span {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    border-radius: 70px;
+    // transition: all 0.2s;
+
+}
+
+.sub__span:hover {
+    transform: scale(1.2);
+    border: 4px double #D946EF;
+    transition: all 0.2s;
+}

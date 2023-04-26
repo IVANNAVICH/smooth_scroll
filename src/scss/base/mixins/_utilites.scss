@@ -52,6 +52,12 @@
   }
 }
 
+@mixin a() {
+  &:active {
+    @content;
+  }
+}
+
 @mixin mq($width) {
   @media (min-width: $width) {
     @content;
