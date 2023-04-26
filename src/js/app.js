@@ -75,5 +75,3 @@ VanillaTilt.init(tilt, {
 });
 
 }
-
-//------------paralax------------
