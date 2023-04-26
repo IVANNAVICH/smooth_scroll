@@ -43,7 +43,13 @@
             <li class="desktop-menu__li">Service</li>
             <li class="desktop-menu__li">Pricing</li>
             <li class="desktop-menu__li">Blog</li>
-            <li class="desktop-menu__li_special">Contact Us</li>
+            <li class="desktop-menu__li_special">
+              <span class="special">
+                <span class="special-static">Contact Us</span>
+                <span class="special-hover">Contact Us</span>
+              </span>
+              
+              </li>
           </ul>
         </div>
       </nav>
@@ -69,7 +75,8 @@
         </div>
 
         <div class="service">
-          <h2 class="service__h2">Our service</h2>
+          <h2 class="service__h2"><span style="--i:1">O</span><span style="--i:2">u</span><span style="--i:3">r</span>
+            <span style="--i:4">S</span><span style="--i:5">e</span><span style="--i:6">r</span><span style="--i:7">v</span><span style="--i:8">i</span><span style="--i:9">c</span><span style="--i:10">e</span></h2>
           <p class="service__p">We turn information into actionable insight. We work to understand your issues and we driven to ask better questions in the pursuit of making work.</p>
           
           <div class="swiper">
@@ -158,7 +165,7 @@
           </div>
 
           <div class="service__gridbox">
-            <div class="service__grid">
+            <div id="uni" class="service__grid effect">
               <div class="service__imgbox service__imgbox_1">
                 <img src="i/circles/circle1.png" class="service__img">
               </div>
@@ -170,7 +177,7 @@
                   </svg>
               </p>
             </div>
-            <div class="service__grid">
+            <div id="uni2" class="service__grid effect">
               <div class="service__imgbox service__imgbox_2">
                 <img src="i/circles/circle2.png" class="service__img">
               </div>
@@ -183,7 +190,7 @@
                   </svg>
               </p>
             </div>
-            <div class="service__grid">
+            <div class="service__grid effect">
               <div class="service__imgbox service__imgbox_3">
                 <img src="i/circles/circle3.png" class="service__img">
               </div>
@@ -196,7 +203,7 @@
                 </svg>
               </p>
             </div>
-            <div class="service__grid">
+            <div class="service__grid effect">
               <div class="service__imgbox service__imgbox_4">
                 <img src="i/circles/circle4.png" class="service__img">
               </div>
@@ -209,7 +216,7 @@
                   </svg>
               </p>
             </div>
-            <div class="service__grid">
+            <div class="service__grid effect">
               <div class="service__imgbox service__imgbox_5">
                 <img src="i/circles/circle5.png" class="service__img">
               </div>
@@ -222,7 +229,7 @@
                   </svg>
               </p>
             </div>
-            <div class="service__grid">
+            <div class="service__grid effect">
               <div class="service__imgbox service__imgbox_6">
                 <img src="i/circles/circle6.png" class="service__img">
               </div>
@@ -265,7 +272,7 @@
           <h2 class="team__h2">Met Our Team</h2>
             <p class="team__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
           <div class="teambox">
-            <div class="teambox__box teambox__box__1">
+            <div class="teambox__box teambox__box__1 effect">
               <div class="teambox__imgbox">
                 <img class="teambox__img" src="i/cat1.jpg">
               </div>
@@ -304,7 +311,7 @@
                 </ul>
               </div>
             </div>
-            <div class="teambox__box teambox__box__2">
+            <div class="teambox__box teambox__box__2 effect">
               <div class="teambox__imgbox">
                 <img class="teambox__img" src="i/cat2.jpg">
               </div>
@@ -343,7 +350,7 @@
                 </ul>
               </div>
             </div>
-            <div class="teambox__box teambox__box__3">
+            <div class="teambox__box teambox__box__3 effect">
               <div class="teambox__imgbox">
                 <img class="teambox__img" src="i/cat3.jpg">
               </div>
@@ -382,7 +389,7 @@
                 </ul>
               </div>
             </div>
-            <div class="teambox__box teambox__box__4">
+            <div class="teambox__box teambox__box__4 effect">
               <div class="teambox__imgbox">
                 <img class="teambox__img" src="i/cat4.jpg">
               </div>
@@ -427,15 +434,17 @@
         <div class="sub">
           <h2 class="sub__h2">Subscribe to get the Latest News</h2>
           <p class="sub__p">We recommended you to subscribe to our newspaper,drop your email below to get daily update about us</p>
-          <for class="sub__form" action="" method="post">
+          <form class="sub__form" action="" method="post">
             <input class="sub__input" name="email" type="email" placeholder="Enter your email address" required>
-            <button class="sub__btn" type="submit">Subscribe</button>
+            <button class="sub__btn" type="submit">Subscribe
+              <span class="sub__span"></span>
+            </button>
           </form>
         </div>
     
       </main>
 
-      <footer class="foot">
+      <div class="foot">
         <div class="contact">
           <section class="contact__box contact__box__1">
             <ul class="contact__ul">
@@ -520,22 +529,22 @@
           </section>
         </div>
         
-      </footer>
+      </div>
 
     </div>
 
-    <div class="bottom">
+    <footer class="bottom">
       <a class="bottom__links bottom__link1" href="#"><p class="bottom__p">© 2021 Zone. - All rights reserved.</p></a>
       <a class="bottom__links" href="#"><p class="bottom__p">Privacy</p></a>
       <a class="bottom__links" href="#"><p class="bottom__p">Security</p></a>
       <a class="bottom__links" href="#"><p class="bottom__p">Terms</p></a>
-    </div>
-
+    </footer>
     <!--  JavaScript here -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/script.js"></script>
+  <script src="js/vanilla-tilt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/app.js"></script>
   </body>
 </html>

@@ -34,7 +34,7 @@
 .sub__input:-webkit-autofill {
     border-top-left-radius: 35px;
     border-bottom-left-radius: 35px;
-    -webkit-text-fill-color: $pink;
+    -webkit-text-fill-color: #D946EF;
     -webkit-box-shadow: 0 0 0px 1000px linear-gradient(180deg, rgba(254, 254, 255, 0.0348) 0%, rgba(255, 255, 255, 0.048) 100%) inset;
     transition: background-color 5000s ease-in-out 0s;
 }
@@ -49,5 +49,6 @@
     font-family: $secondFontFamily;
     font-weight: 500;
     font-size: 14px;
-    // line-height: 30px;
+    transition: transform 0.1s;
+    position: relative;
 }

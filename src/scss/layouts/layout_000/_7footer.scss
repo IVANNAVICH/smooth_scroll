@@ -29,7 +29,9 @@
     line-height: 40px;
     letter-spacing: 0.01em;
     color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
 }
+
 
 .contact__soc-box {
     display: flex;
@@ -42,7 +44,7 @@
    height: 34px;
    background: linear-gradient(180deg, rgba(254, 254, 255, 0.0145) 0%, rgba(255, 255, 255, 0.02) 100%);
    border-radius: 50%;
-   
+   cursor: pointer;
    position: relative;
 }
 
@@ -64,7 +66,10 @@ li .logo-block {
     justify-content: space-evenly;
 }
 
+.bottom__links p {
+    cursor: pointer;
+}
+
 .bottom__link1 {
     flex-basis: 42%;
 }
-
