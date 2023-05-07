@@ -4,18 +4,14 @@
 
 html {
   @include getCssVar(font-size);
-  overflow: hidden;
-  scroll-behavior: smooth;
+  @include getCssVar(font-family);
+  @include getCssVar(line-height);
 }
 
 body {
-  @include getCssVar(font-family);
-  @include getCssVar(line-height);
   font-size: $baseFontSize;
-  background: $deepBlue;
   height: 100vh;
   margin: 0rem;
-  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, p {
@@ -26,115 +22,4 @@ a {
   text-decoration: none;
   color: white;
   display: inline-block;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 12px;
-  z-index: 4;
-  color: $white;
-}
-
-#blur {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  z-index: -29;
-  backdrop-filter: blur(40px);
-}
-
-.moving-blur {
-  display: none;
-  height: 70%;
-  aspect-ratio: 1;
-  background: linear-gradient(to right, aquamarine, rgb(204, 51, 196));
-  position: absolute;
-  z-index: -1000;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
-  border-radius: 50%;
-  animation: rotate 15s infinite;
-  filter: blur(100px);
-  opacity: 0.6;
-}
-
-.bg-blur {
-  position: absolute;
-  z-index: -30;
-  overflow: hidden;
-  opacity: 0.8;
-  filter: blur(60px);
-  border-radius: 50px;
-}
-
-.bg-blur-1 {
-  width: 100px;
-  height: 100px;
-  background-color: $pink;
-  top: 120px;
-  left: 10%;
-}
-
-.bg-blur-2 {
-  width: 100px;
-  height: 200px;
-  background-color: $blue;
-  top: 100px;
-  right: 10%;
-}
-
-.bg-blur-3 {
-  width: 150px;
-  height: 250px;
-  background-color: $blue;
-  bottom: 100px;
-  left: 15%;
-}
-
-.bg-blur-4 {
-  width: 200px;
-  height: 200px;
-  background-color: $pink;
-  bottom: 100px;
-  right: 15%;
-  opacity: 0.4;
-}
-
-//--------------animation----------------
-
-@keyframes rotate {
-  from {
-    rotate: 0deg;
-  }
-
-  50% {
-    scale: 1 1.3;
-  }
-  to {
-    rotate: 360deg;
-  }
-}
-
-//---------------video-----------------
-
-.video{
-  display: flex;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0, 0.9);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .4s, visibility .4s;
-  z-index: 99999;
-}
-
-.visible {
-  opacity: 1;
-  visibility: visible;
-
 }
