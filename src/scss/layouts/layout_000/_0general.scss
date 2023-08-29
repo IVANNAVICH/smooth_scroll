@@ -1,5 +1,7 @@
 *, *::before, *::after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
@@ -8,18 +10,106 @@ html {
   @include getCssVar(line-height);
 }
 
+//will change
+.content, .hero, .main-header, .gallery > * {
+  will-change: transform;
+}
+
 body {
   font-size: $baseFontSize;
+  font-family: raleway-c;
   height: 100vh;
   margin: 0rem;
+  background-image: image("bg.jpg");
+  background-size: 50px;
+  color: #fafafa;
+  overflow-x: hidden;
+
 }
 
 h1, h2, h3, h4, p {
   cursor: default;
+  font-family: outfit-c;
 }
 
 a {
   text-decoration: none;
   color: white;
   display: inline-block;
+}
+
+:root {
+  --index: calc(1vw + 1vh);
+  --gallery-gap: calc(var(--index) * 10);
+}
+
+ 
+.hero-img {
+  width: calc(var(--index) * 36);
+  position: absolute;
+  left: 37vw;
+  top: 1vh;
+  z-index: -1;
+}
+
+.container {
+  padding: 0 7vw;
+
+}
+
+.main-header {
+  height: 100vh;
+}
+
+.main-header__h1{
+  font-size: calc(var(--index) * 8);
+  position: absolute;
+  width: min-content;
+  bottom: 12vh;
+  line-height: .9;
+  margin: 0;
+}
+
+.gallery {
+  display: flex;
+  padding: calc(var(--index) * 9) 0;
+}
+
+.gallery > * {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gallery__item {
+  max-width: calc(var(--index) * 21);
+  margin-bottom: var(--gallery-gap);
+  max-height: 180vh;
+  border-radius: 8px;
+}
+
+.gallery__left {
+margin-top: calc(var(--gallery-gap) * 1.75);
+}
+
+.gallery__right .gallery__item {
+margin: 0;
+margin-top: calc(var(--gallery-gap));
+}
+
+.text-block {
+  color: var(--color-text);
+  position: relative;
+}
+
+.text-block__h2 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: var(--color-header);
+  text-transform: uppercase;
+}
+
+.text-block__p {
+  line-height: 1.75;
 }
