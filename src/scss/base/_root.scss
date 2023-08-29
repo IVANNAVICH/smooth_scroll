@@ -6,4 +6,8 @@
   @each $color, $value in $colors {
     @include setCssVar($color, $value);
   }
+  --index: calc(1vw + 1vh);
+  --color-text: #cdc6c3;
+  --color-header: #f4efec;
 }
+
